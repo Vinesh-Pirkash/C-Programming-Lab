@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char msg[100], backup[100];
+
+    printf("Enter a short message: ");
+    fgets(msg, sizeof(msg), stdin);
+
+    strcpy(backup, msg);
+
+    printf("Original: %s", msg);
+    printf("Backup: %s", backup);
+    return 0;
+}
